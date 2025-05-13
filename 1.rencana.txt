@@ -1,0 +1,12 @@
+/htdocs
+├── index.php         (halaman utama / login)
+├── register.php      (buat akun)
+├── dashboard.php     (profil & skor)
+├── leaderboard.php   (lihat peringkat)
+├── game.php          (main game)
+├── logout.php
+├── koneksi.php       (koneksi ke DB)
+
+
+
+login.php,sigup.php,logout.php,koneksi.php,index.php ini yg sudah benar 
