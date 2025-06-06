@@ -72,17 +72,7 @@ INSERT INTO `leaderboard` (`id`, `email`, `skor`, `waktu_bermain`, `waktu_pencap
 (4, 'er@gmail.com', 1900, 541, '2025-05-13 14:52:32');
 
 -- --------------------------------------------------------
-
---
--- Struktur dari tabel `users`
---
-
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
+4
 --
 -- Dumping data untuk tabel `users`
 --

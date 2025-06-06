@@ -27,13 +27,11 @@ $email = htmlspecialchars($_SESSION['email']);
         height: 100%;
         font-family: 'Segoe UI', sans-serif;
         background-color: #e8f0ff;
-        /* biru muda */
         overflow: hidden;
     }
 
     .navbar {
         background-color: #1e3a8a;
-        /* biru tua */
         color: white;
         padding: 16px 32px;
         display: flex;
@@ -45,7 +43,6 @@ $email = htmlspecialchars($_SESSION['email']);
         font-size: 24px;
         font-weight: bold;
         color: #22c55e;
-        /* hijau aksen */
     }
 
     .navbar ul {
@@ -62,12 +59,10 @@ $email = htmlspecialchars($_SESSION['email']);
 
     .navbar ul li a:hover {
         color: #93c5fd;
-        /* biru terang saat hover */
     }
 
     .container {
         height: calc(100% - 64px);
-        /* tinggi layar dikurangi navbar */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -110,6 +105,7 @@ $email = htmlspecialchars($_SESSION['email']);
         transition: background-color 0.3s ease;
         text-decoration: none;
         display: inline-block;
+        margin: 5px;
     }
 
     .btn:hover {
@@ -145,7 +141,8 @@ $email = htmlspecialchars($_SESSION['email']);
         <div class="content-box">
             <h1>Selamat Datang di <span>tetrisku.com</span></h1>
             <p>Halo, <strong><?= $email ?></strong>! Selamat bermain Tetris online.</p>
-            <a href="game.php" class="btn">Mulai Game</a>
+            <a href="game.php" class="btn">Main Tetris</a>
+            <a href="game1.php" class="btn">Main Ular</a>
         </div>
     </div>
 

@@ -10,3 +10,6 @@
 
 
 login.php,sigup.php,logout.php,koneksi.php,index.php ini yg sudah benar 
+git add .
+git commit -m ""
+git push
