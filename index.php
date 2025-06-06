@@ -140,7 +140,7 @@ $email = htmlspecialchars($_SESSION['email']);
     <!-- Konten -->
     <div class="container">
         <div class="content-box">
-            <h1>Selamat Datang di <span>tetrisku.com</span></h1>
+            <h1>Selamat Datang di <span>Erzha.rf.gd</span></h1>
             <p>Halo, <strong><?= $email ?></strong>! Selamat bermain di web saya</p>
             <a href="game.php" class="btn">Main Tetris</a>
             <a href="game1.php" class="btn">Main Ular</a>
