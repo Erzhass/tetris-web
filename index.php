@@ -15,7 +15,7 @@ $email = htmlspecialchars($_SESSION['email']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - Erzha.rf.gd</title>
+    <title>Beranda - erzha.rf.gd</title>
     <style>
     * {
         margin: 0;
@@ -129,7 +129,7 @@ $email = htmlspecialchars($_SESSION['email']);
 
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">Erzha.rf.gd</div>
+        <div class="logo">erzhanv.rf.gd</div>
         <ul>
             <li><a href="dashboard.php">Dashboard</a></li>
             <li><a href="leaderboard.php">Leaderboard</a></li>
@@ -140,7 +140,7 @@ $email = htmlspecialchars($_SESSION['email']);
     <!-- Konten -->
     <div class="container">
         <div class="content-box">
-            <h1>Selamat Datang di <span>Erzha.rf.gd</span></h1>
+            <h1>Selamat Datang di <span>erzha.rf.gd</span></h1>
             <p>Halo, <strong><?= $email ?></strong>! Selamat bermain di web saya</p>
             <a href="game.php" class="btn">Main Tetris</a>
             <a href="game1.php" class="btn">Main Ular</a>
