@@ -10,6 +10,7 @@ if (!isset($_SESSION['user_id'])) {
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Tetris</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -23,6 +24,7 @@ if (!isset($_SESSION['user_id'])) {
 
 <body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4 relative">
     <a href="index.php" class="absolute top-4 left-4 bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">⬅️ Kembali</a>
+
     <h1 class="text-3xl font-bold text-blue-400 mb-2">🎮 Tetris</h1>
 
     <div class="mb-2 flex gap-6 text-lg text-gray-300">
@@ -30,9 +32,10 @@ if (!isset($_SESSION['user_id'])) {
         <div>Waktu: <span id="time">0</span> detik</div>
     </div>
 
-    <div class="mt-4 flex items-start gap-8">
+    <div class="mt-4 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8">
         <!-- Canvas Tetris -->
-        <canvas id="tetris" width="300" height="400"></canvas>
+        <canvas id="tetris" class="w-[300px] h-[400px] md:w-[300px] md:h-[400px] max-w-full" width="300"
+            height="400"></canvas>
 
         <!-- Sidebar -->
         <div class="flex flex-col gap-4">
@@ -48,6 +51,16 @@ if (!isset($_SESSION['user_id'])) {
                 <p id="save-status" class="mt-2 text-center font-semibold"></p>
             </div>
         </div>
+    </div>
+
+    <!-- Kontrol Mobile -->
+    <div class="md:hidden flex flex-col items-center gap-2 mt-6">
+        <div class="flex gap-4">
+            <button onclick="playerMove(-1)" class="bg-gray-700 p-4 rounded-full text-xl">⬅️</button>
+            <button onclick="playerRotate(1)" class="bg-gray-700 p-4 rounded-full text-xl">🔄</button>
+            <button onclick="playerMove(1)" class="bg-gray-700 p-4 rounded-full text-xl">➡️</button>
+        </div>
+        <button onclick="playerDrop()" class="bg-gray-700 p-4 rounded-full text-xl mt-2">⬇️</button>
     </div>
 
     <script>

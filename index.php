@@ -14,6 +14,7 @@ $email = htmlspecialchars($_SESSION['email']);
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda - Tetrisku</title>
     <style>
     * {
@@ -143,6 +144,7 @@ $email = htmlspecialchars($_SESSION['email']);
             <p>Halo, <strong><?= $email ?></strong>! Selamat bermain Tetris online.</p>
             <a href="game.php" class="btn">Main Tetris</a>
             <a href="game1.php" class="btn">Main Ular</a>
+            <a href="game2.php" class="btn">Main 2048</a>
         </div>
     </div>
 
